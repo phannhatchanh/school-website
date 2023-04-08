@@ -62,72 +62,16 @@ const schoolname = await getSetting();
 			<h2>Hướng dẫn của chúng tôi</h2>
 			<Grid>
 				<Major
-					tag="LICEUM"
-					title="Akademicka Szkoła Politechniczna"
-					description="Wydaje mi się, że nudne, ale możesz przyjść"
-					extenstions="Matematyka i fizyka albo chemia"
+					tag="từ khóa 1"
+					title="Tiêu đề bài viết số 1"
+					description="Đoạn mô tả ngắn cho bài viết số 1"
+					extenstions="Mảnh ghép thứ 1"
 				/>
 				<Major
-					tag="LICEUM"
-					title="Klasa Bezpieczeństwa Publicznego"
-					description="Jak lubisz mundury :D"
-					extenstions="Geografia i WOS"
-				/>
-				<Major
-					tag="LICEUM"
-					title="Klasa Pedagogiczna"
-					path="/"
-					description="Interesujesz się psychologią bądź pedagogiką?"
-					extenstions="Język polski i biologia"
-				/>
-				<Major
-					tag="LICEUM"
-					title="Klasa Rehabilitacyjno-Medyczna"
-					path="/"
-					description="Wyleczymy Cię z Twoich problemów :P"
-					extenstions="Biologia i chemia"
-				/>
-				<Major
-					tag="LICEUM"
-					title="Klasa Geograficzno-Językowa"
-					path="/"
-					description="Niemiecki, Hiszpański, Angielski? Wybieraj"
-					extenstions="Geografia i język obcy"
-				/>
-				<Major
-					tag="TECHNIKUM"
-					title="Techink Technologii Chemicznej"
-					path="/"
-					description="Zawsze wlewaj kwas do wody!"
-					extenstions="Chemia i język obcy"
-				/>
-				<Major
-					tag="TECHNIKUM"
-					title="Techink Ekonomista"
-					path="/"
-					description="Kiedy lubisz liczyć pieniążki"
-					extenstions="Matematyka i język obcy"
-				/>
-				<Major
-					tag="TECHNIKUM"
-					title="Techink Hotelarstwa"
-					path="/"
-					description="Szczerze, nie wiem co tu napisać"
-					extenstions="Geografia i język obcy"
-				/>
-				<Major
-					tag="TECHNIKUM"
-					title="Techink Programista"
-					path="/"
-					description="Dla miłośników parzenia kawy"
-					extenstions="Matematyka i język obcy"
-				/>
-				<Major
-					tag="TECHNIKUM"
-					title="Techink Informatyk"
-					path="/"
-					description="Klasowy informatyk? Tu jest twoje miejsce"
-					extenstions="Matematyka i język obcy"
+					tag="từ khóa 2"
+					title="Tiêu đề bài viết số 2"
+					description="Đoạn mô tả ngắn cho bài viết số 2"
+					extenstions="Mảnh ghép thứ 2"
 				/>
 			</Grid>
 		</section>

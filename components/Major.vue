@@ -37,7 +37,7 @@ defineProps<{
 		.tag {
 			font-size: 0.9em;
 			background-color: rgba(0, 0, 0, 0.075);
-			width: min-content;
+			width: max-content;
 			padding: 0.2em;
 			margin-bottom: 0.6em;
 		}
