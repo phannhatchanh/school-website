@@ -1,0 +1,12 @@
+# Một trang web cho trường học
+
+## [Nuxt 3](https://nuxt.com/) - nền tảng cốt lỗi của ứng dụng
+Nuxt 3 được xây dựng dựa trên Vue.js, cho hiệu suất ứng dụng nhanh hơn và hỗ trợ SEO tốt hơn nhờ Server-side rendering (SSR).
+
+## [Sanity](https://sanity.io/) - Hệ thống quản lý nội dung
+Sanity là một Headless CMS cho phép bạn dễ dàng quản lý nội dung trong ứng dụng. Với ứng dụng này, bạn có thể:
+- Chỉnh sửa thanh điều hướng cho trang web một cách linh động
+- Thêm bài viết mới
+- Tải lên tài liệu, văn bản,...
+- Dễ dàng thêm sự kiện trong tương lai
+- ...
