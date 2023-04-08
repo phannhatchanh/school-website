@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito%3A400%2C400i%2C700%2C700i&subset=vietnamese&ver=6.1.1");
+
+:root {
+	--blue: #2e4e97;
+	--yellow: #f6b415;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 800px) {
+	body[scrollable="true"] {
+		overflow: hidden;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
