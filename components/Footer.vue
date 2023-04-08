@@ -30,8 +30,8 @@ const data = await getSetting();
 				<NuxtLink :to="'tel:' + item.phone">{{ item.phone }}</NuxtLink>
 			</div>
 		</div>
-		<div class="px-[5px]">
-			Copyright © 2023 DTNT. Developed by
+		<div class="px-[5px]" v-for="(item, index) in data" :key="index">
+			{{ item.copyright }}. Developed by
 			<NuxtLink to="https://phannhatchanh.com" target="_blank">Chánh</NuxtLink>.
 		</div>
 	</footer>
