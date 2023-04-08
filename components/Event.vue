@@ -6,6 +6,24 @@ defineProps<{
 	endDate: string;
 	status: string;
 }>();
+const isCurrent = computed((startDate, endDate) => {
+	const start = new Date(startDate);
+	const end = new Date(endDate);
+	const today = new Date();
+	return today >= start && today <= end;
+});
+
+const isUpcoming = computed((startDate) => {
+	const start = new Date(startDate);
+	const today = new Date();
+	return today < start;
+});
+
+const isEnded = computed((endDate) => {
+	const end = new Date(endDate);
+	const today = new Date();
+	return today > end;
+});
 </script>
 <template>
 	<div class="event">
@@ -16,6 +34,9 @@ defineProps<{
 			<div class="date">
 				<Icon name="mdi:puzzle-outline" /> {{ startDate }} đến {{ endDate }}
 			</div>
+			<div v-if="isCurrent">Đang diễn ra</div>
+			<div v-else-if="isUpcoming">Sắp diễn ra</div>
+			<div v-else-if="isEnded">Đã kết thúc</div>
 		</div>
 	</div>
 </template>
