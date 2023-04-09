@@ -11,9 +11,9 @@
 		"@nuxt/image-edge": "1.0.0-27990059.c3f31ce",
 		"@nuxtjs/sanity": "^1.6.0",
 		"@nuxtjs/tailwindcss": "^6.6.5",
-		"nuxt": "^3.3.1",
+		"nuxt": "^3.3.3",
 		"nuxt-icon": "^0.3.3",
-		"sass": "^1.59.3"
+		"sass": "^1.61.0"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^0.1.11"
