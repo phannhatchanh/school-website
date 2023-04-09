@@ -32,7 +32,9 @@ const isEnded = computed((endDate) => {
 			<h2 class="title">{{ title }}</h2>
 			<div class="description">{{ description }}</div>
 			<div class="date">
-				<Icon name="mdi:puzzle-outline" /> {{ startDate }} đến {{ endDate }}
+				<Icon name="mdi-light:alarm" size="20" class="mb-1.5" />
+				{{ startDate }} đến
+				{{ endDate }}
 			</div>
 			<div v-if="isCurrent">Đang diễn ra</div>
 			<div v-else-if="isUpcoming">Sắp diễn ra</div>

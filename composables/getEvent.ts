@@ -11,3 +11,13 @@ export const getEvent = async (): Promise<Event[]> => {
 
 	return data;
 };
+
+export const getDateFromEnvent = (datetime: string) => {
+	const formatter = Intl.DateTimeFormat("vi-VN", {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
+	return formatter.format(new Date(datetime));
+};

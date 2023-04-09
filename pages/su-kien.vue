@@ -35,8 +35,8 @@ const isUpcoming = (startDate: string) => {
 						"
 						:title="item.title"
 						:description="item.description"
-						:startDate="item.startDate"
-						:endDate="item.endDate"
+						:startDate="getDateFromEnvent(item.startDate)"
+						:endDate="getDateFromEnvent(item.endDate)"
 					/>
 				</div>
 			</Grid>
