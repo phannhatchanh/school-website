@@ -10,19 +10,38 @@ if (!isFound) setResponseStatus(404, "Không tìm thấy bài viết");
 	<Head v-for="(item, index) in schoolname" :key="index">
 		<Title>{{ article.title }} - {{ item.name }} {{ item.district }}</Title>
 	</Head>
-	<BackButton to="/posts/page/1">Bài viết</BackButton>
+
+	<header
+		class="post-tool"
+		v-if="article.image != null && article.showTitleImage"
+		:style="'background-image: url(' + article.image.url + ')'"
+	>
+		<div class="container">
+			<div class="row justify-center">
+				<div class="col-12 col-md-10">
+					<h1 class="page-title">
+						{{ article.title }}
+					</h1>
+					<div class="page-subtitle">
+						<span :style="'color: ' + article.category.color">
+							<a href="">{{ article.category.title }}</a>
+						</span>
+						<span>
+							{{ getDateFromArticle(article) }}
+						</span>
+					</div>
+					<p class="text-center mt-2">
+						<span class=""> Miễn phí</span>
+						<span class=""> Windows </span>
+						<span class=""> Linux </span>
+						<span class=""> MacOS </span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<article v-if="isFound">
-		<div class="date">{{ getDateFromArticle(article) }}</div>
-		<div class="title">Category: {{ article.category.title }}</div>
-		<div class="title">Color: {{ article.category.color }}</div>
-		<h1 class="title">{{ article.title }}</h1>
-		<NuxtImg
-			v-if="article.image != null && article.showTitleImage"
-			:src="article.image.url"
-			:alt="article.image.altText"
-			class="img-fluid img"
-		/>
 		<PortableText :blocks="article.body" />
 	</article>
 	<ErrorMessage v-else message="Không tìm thấy bài viết" />
@@ -30,9 +49,6 @@ if (!isFound) setResponseStatus(404, "Không tìm thấy bài viết");
 
 <style lang="scss" scoped>
 article {
-	h1 {
-		@apply first-letter:relative text-xl font-medium sm:text-3xl;
-	}
 	h2 {
 		@apply relative text-xl font-medium sm:text-2xl;
 	}
@@ -41,6 +57,47 @@ article {
 	}
 	h4 {
 		@apply text-lg font-medium text-rose-100/90;
+	}
+}
+
+.post-tool {
+	padding: 3rem 0;
+	position: relative;
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		background-color: #000;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.5;
+	}
+}
+
+.page-title {
+	text-align: center;
+	color: #fff;
+	font-size: 1.8rem;
+	text-shadow: 2px 2px 4px #000;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.page-subtitle {
+	color: #c6efde;
+	text-align: center;
+	font-size: 0.95rem;
+	padding-top: 0.25rem;
+	line-height: 1.5;
+	@media (max-width: 575px) {
+		font-size: 1rem;
 	}
 }
 </style>

@@ -25,7 +25,7 @@ withDefaults(defineProps<Props>(), {
 	color: inherit;
 	text-decoration: none;
 
-	border: 2px solid currentColor;
+	border: 2px solid var(--blue);
 
 	&:hover {
 		border: 2px solid var(--yellow);

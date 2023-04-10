@@ -16,12 +16,15 @@ const props = defineProps<{ error: any }>();
 
 <style lang="scss" scoped>
 .error {
-	text-align: center;
-
+	@apply text-center;
+	h1 {
+		@apply text-5xl font-bold;
+	}
+	h2 {
+		@apply text-xl font-bold;
+	}
 	.btn {
-		display: grid;
-		place-items: center;
-		padding: 0.7em;
+		@apply grid justify-center text-center p-[0.7em];
 	}
 }
 </style>

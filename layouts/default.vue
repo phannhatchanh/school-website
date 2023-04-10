@@ -1,35 +1,31 @@
 <template>
 	<div class="app">
 		<Nav />
-		<div class="content-wrapper">
+		<main class="content-wrapper">
 			<div class="content">
 				<slot />
 			</div>
 			<Footer />
-		</div>
+		</main>
 	</div>
 </template>
 <style scoped lang="scss">
 .app {
 	.content-wrapper {
-		margin-left: 250px;
-		padding-bottom: 10px;
+		@apply ml-[250px] pb-[10px];
 
 		.content {
-			margin: auto;
-			max-width: 950px;
-			padding: 0.6em 1em 0em 1em;
+			@apply m-auto max-w-5xl pt-[0.6em] pb-[0em] px-[1em];
 		}
 	}
 }
 
 @media (max-width: 800px) {
 	.app {
-		display: block;
+		@apply block;
 
 		.content-wrapper {
-			padding-top: 49px;
-			margin-left: initial;
+			@apply pt-12 ml-0;
 		}
 	}
 }

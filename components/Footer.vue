@@ -23,10 +23,10 @@ const data = await getSetting();
 			<div class="right">
 				<Icon name="bi:house" /> {{ item.name }} {{ item.district }}<br />
 				<Icon name="bi:pin-map" /> {{ item.address }}<br />
-				<Icon name="bi:envelope-at" />
+				<Icon name="bi:envelope-at" class="mr-1" />
 				<NuxtLink :to="'mailto:' + item.email">{{ item.email }}</NuxtLink
 				><br />
-				<Icon name="bi:telephone-inbound" />
+				<Icon name="bi:telephone-inbound" class="mr-1" />
 				<NuxtLink :to="'tel:' + item.phone">{{ item.phone }}</NuxtLink>
 			</div>
 		</div>
@@ -74,9 +74,7 @@ footer {
 		}
 
 		.right {
-			font-size: 1.1em;
-			text-align: left;
-			line-height: 21px;
+			@apply text-[1.1em] text-left leading-7;
 		}
 	}
 }

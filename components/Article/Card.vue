@@ -27,18 +27,16 @@ defineProps<Props>();
 				</NuxtLink>
 			</div>
 			<div class="post-title">
-				<h2>
-					<NuxtLink
-						class="no-a-effect"
-						:to="'/posts/detail/' + article.slug"
-						:title="getPreviewFromArticle(article, 100)"
-					>
-						{{ article.title }}
-					</NuxtLink>
-				</h2>
+				<NuxtLink
+					class="no-a-effect"
+					:to="'/posts/detail/' + article.slug"
+					:title="getPreviewFromArticle(article, 100)"
+				>
+					{{ article.title }}
+				</NuxtLink>
 			</div>
 			<div class="post-date">
-				<Icon name="bi:clock" /> {{ getDateFromArticle(article) }}
+				<Icon name="bi:clock" class="mb-1" /> {{ getDateFromArticle(article) }}
 			</div>
 		</div>
 	</div>
@@ -100,7 +98,9 @@ defineProps<Props>();
 	.post-date {
 		text-align: center;
 		opacity: 0.8;
-		font-size: 0.75rem;
+		color: #0f799a;
+		font-weight: 600;
+		font-size: 13px;
 	}
 }
 </style>

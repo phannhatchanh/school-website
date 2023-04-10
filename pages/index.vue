@@ -7,87 +7,86 @@ const schoolname = await getSetting();
 	<Head v-for="(item, index) in schoolname" :key="index">
 		<Title>{{ item.name }} {{ item.district }}</Title>
 	</Head>
-	<main>
-		<SchoolBanner />
-		<section>
-			<h2>Truy cập nhanh</h2>
-			<Grid>
-				<CategoryButton
-					title="Giới thiệu"
-					description="Chúng tôi là ai?"
-					path="/gioi-thieu"
-					:targetBlank="false"
+
+	<SchoolBanner />
+	<section>
+		<h2>Truy cập nhanh</h2>
+		<Grid>
+			<CategoryButton
+				title="Giới thiệu"
+				description="Chúng tôi là ai?"
+				path="/gioi-thieu"
+				:targetBlank="false"
+			/>
+			<CategoryButton
+				title="Tổ chức"
+				description="Cơ cấu tổ chức nội bộ trong nhà trường."
+				path="/nha-truong"
+				:targetBlank="false"
+			/>
+			<CategoryButton
+				title="Tuyển sinh"
+				description="Thông tin về tuyển sinh hàng năm của nhà trường"
+				path="/tuyen-sinh"
+				:targetBlank="false"
+			/>
+			<CategoryButton
+				title="Chế độ của học sinh"
+				description="Những thông tin về chế độ của học sinh được hưởng khi tham gia học tại trường"
+			/>
+		</Grid>
+	</section>
+	<section>
+		<div>
+			<h2>
+				<NuxtLink to="/posts">
+					Bài viết mới nhất
+					<Icon name="mdi:chevron-right" size="30" />
+				</NuxtLink>
+			</h2>
+			<div
+				class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
+			>
+				<ArticleCard
+					v-for="article in articles"
+					:article="article"
+					:key="article.slug"
 				/>
-				<CategoryButton
-					title="Tổ chức"
-					description="Cơ cấu tổ chức nội bộ trong nhà trường."
-					path="/nha-truong"
-					:targetBlank="false"
-				/>
-				<CategoryButton
-					title="Tuyển sinh"
-					description="Thông tin về tuyển sinh hàng năm của nhà trường"
-					path="/tuyen-sinh"
-					:targetBlank="false"
-				/>
-				<CategoryButton
-					title="Chế độ của học sinh"
-					description="Những thông tin về chế độ của học sinh được hưởng khi tham gia học tại trường"
-				/>
-			</Grid>
-		</section>
-		<section>
-			<div>
-				<h2>
-					<NuxtLink to="/posts">
-						Bài viết mới nhất
-						<Icon name="mdi:chevron-right" size="30" />
-					</NuxtLink>
-				</h2>
-				<div
-					class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
-				>
-					<ArticleCard
-						v-for="article in articles"
-						:article="article"
-						:key="article.slug"
-					/>
-				</div>
-				<div class="show-more">
-					<Button to="/posts/page/1" class="btn">Xem nhiều hơn</Button>
-				</div>
 			</div>
-		</section>
-		<section>
-			<h2>Hướng dẫn của chúng tôi</h2>
-			<Grid>
-				<Major
-					tag="từ khóa 1"
-					title="Tiêu đề bài viết số 1"
-					description="Đoạn mô tả ngắn cho bài viết số 1"
-					extenstions="Mảnh ghép thứ 1"
-				/>
-				<Major
-					tag="từ khóa 2"
-					title="Tiêu đề bài viết số 2"
-					description="Đoạn mô tả ngắn cho bài viết số 2"
-					extenstions="Mảnh ghép thứ 2"
-				/>
-			</Grid>
-		</section>
-		<section>
-			<h2>Bạn có thể tìm chúng tôi ở đâu?</h2>
-			<iframe
-				src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=TRƯỜNG PTDTNT-THCS-HUYỆN CÀNG LONG, Ấp Lưu Tư, Huyền Hội, Càng Long, Trà Vinh&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-				width="100%"
-				height="450"
-				style="border: 0"
-				allowfullscreen
-				loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"
-			></iframe>
-		</section>
-	</main>
+			<div class="show-more">
+				<Button to="/posts/page/1" class="btn">Xem nhiều hơn</Button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Hướng dẫn của chúng tôi</h2>
+		<Grid>
+			<Major
+				tag="từ khóa 1"
+				title="Tiêu đề bài viết số 1"
+				description="Đoạn mô tả ngắn cho bài viết số 1"
+				extenstions="Mảnh ghép thứ 1"
+			/>
+			<Major
+				tag="từ khóa 2"
+				title="Tiêu đề bài viết số 2"
+				description="Đoạn mô tả ngắn cho bài viết số 2"
+				extenstions="Mảnh ghép thứ 2"
+			/>
+		</Grid>
+	</section>
+	<section>
+		<h2>Bạn có thể tìm chúng tôi ở đâu?</h2>
+		<iframe
+			src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=TRƯỜNG PTDTNT-THCS-HUYỆN CÀNG LONG, Ấp Lưu Tư, Huyền Hội, Càng Long, Trà Vinh&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+			width="100%"
+			height="450"
+			style="border: 0"
+			allowfullscreen
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"
+		></iframe>
+	</section>
 </template>
 
 <style lang="scss" scoped>
