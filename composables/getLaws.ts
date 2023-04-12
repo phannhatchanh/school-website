@@ -11,3 +11,13 @@ export const getLaws = async (): Promise<Laws[]> => {
 
 	return data;
 };
+
+export const formatDateMonthYear = (datetime: string) => {
+	const formatter = Intl.DateTimeFormat("vi-VN", {
+		// weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
+	return formatter.format(new Date(datetime));
+};

@@ -61,7 +61,7 @@ const schoolname = await getSetting();
 									</span>
 								</td>
 								<td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-									{{ item.date_publish }}
+									{{ formatDateMonthYear(item.date_publish) }}
 								</td>
 								<td class="p-3 text-sm text-gray-700">
 									{{ item.description }}
@@ -98,7 +98,9 @@ const schoolname = await getSetting();
 									{{ item.number_of_symbol }}
 								</span>
 							</div>
-							<div class="text-gray-500">{{ item.date_publish }}</div>
+							<div class="text-gray-500">
+								{{ formatDateMonthYear(item.date_publish) }}
+							</div>
 						</div>
 						<div class="text-sm text-gray-700">
 							{{ item.description }}
