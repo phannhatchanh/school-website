@@ -29,44 +29,140 @@ const schoolname = await getSetting();
 		</div>
 	</header>
 
-	<div class="" v-for="(article, index) in categoryData.articles" :key="index">
-		<div class="">
-			<NuxtImg
-				class=""
-				width="400"
-				height="236"
-				:src="article.image.url"
-				:alt="article.title"
-			/>
-		</div>
-		<div class="">
-			<h2>
+	<div
+		class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
+	>
+		<div
+			class="metro-single-article"
+			v-for="(article, index) in categoryData.articles"
+			:key="index"
+		>
+			<figure>
 				<NuxtLink
-					class="no-a-effect"
 					:to="'/posts/detail/' + article.slug.current"
 					:title="article.title"
-					>{{ article.title }}</NuxtLink
 				>
-			</h2>
-			<div class="">
-				{{ getDateCategory(article.datetime) }}
-			</div>
-			<div class="intro">
-				{{ article.summary }}
-			</div>
-			<div class="">
-				<NuxtLink
-					class=""
-					:to="'/posts/detail/' + article.slug.current"
-					:title="article.title"
-					>Xem chi tiết</NuxtLink
-				>
+					<NuxtImg
+						width="389"
+						height="270"
+						:src="article.image.url"
+						:title="article.title"
+						:alt="article.summary"
+					/>
+				</NuxtLink>
+				<div class="icon_in_figure-container">
+					<div class="icon_in_figure icon_in_figure-python"></div>
+				</div>
+			</figure>
+			<div class="metro-article-content">
+				<span class="metro-entry-info" style="color: rgb(15, 121, 154)">
+					<i class="fa fa-clock-o" style="color: rgb(15, 121, 154)"></i
+					>{{ getDateCategory(article.datetime) }}
+				</span>
+				<h3 class="metro-entry-title">
+					<NuxtLink
+						:to="'/posts/detail/' + article.slug.current"
+						:title="article.title"
+					>
+						{{ article.title }}
+					</NuxtLink>
+				</h3>
 			</div>
 		</div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
+.metro-single-article:nth-child(5n + 5),
+.tg-one-half .metro-single-article:nth-child(3n + 3) {
+	@apply mr-0;
+}
+
+.metro-single-article:hover {
+	transform: translate(0px, -4px);
+	transition-duration: 0.2s;
+	box-shadow: 3px 6px 7px 0px #929292ed;
+}
+
+.metro-single-article img {
+	margin: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	transition-duration: 1.5s;
+}
+
+/*.metro-single-article img:hover {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transition-duration: 1s
+}*/
+
+.widget .widget_text {
+	@apply block;
+}
+
+.metro-single-article figure {
+	margin-bottom: -1px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.metro-single-article figure:hover {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.metro-single-article:hover > .metro-article-content {
+	border: 1px solid #d8d8d8;
+}
+
+.metro-article-content {
+	height: 125px;
+	padding: 3% 4% 4% 4%;
+	border: 1px solid #ececec;
+	background: #f6f6f6;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	text-align: center;
+}
+
+.metro-entry-info {
+	color: #7d7d7d;
+	margin-bottom: 5px;
+	position: relative;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.metro-entry-info::after,
+.metro-entry-info::before {
+	content: " ";
+	width: 20px;
+	height: 1px;
+	position: absolute;
+	top: 10px;
+	background: #e6e6e6;
+}
+
+.metro-entry-info::before {
+	@apply -left-7;
+}
+
+.metro-entry-info::after {
+	@apply -right-7;
+}
+
+.metro-entry-title {
+	@apply text-[15px] text-center pt-[1%];
+}
+
+.metro-entry-title a {
+	@apply text-[#333] font-semibold;
+}
+
 .header-intro {
 	.intro {
 		color: hsla(0, 0%, 100%, 0.8);
