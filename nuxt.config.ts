@@ -17,23 +17,24 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			htmlAttrs: {
-				lang: "pl",
+				lang: "vi",
 			},
 			link: [
+				{ rel: "icon", type: "image/x-icon", href: "/favicon.png" },
 				{
 					rel: "icon",
 					sizes: "192x192",
-					href: "/Logo192x192.webp",
+					href: "/logo1@2x.png",
 				},
 				{
 					rel: "icon",
 					sizes: "32x32",
-					href: "/Logo32x32.webp",
+					href: "/logo.png",
 				},
 				{
 					rel: "apple-touch-icon",
 					sizes: "32x32",
-					href: "/Logo32x32.webp",
+					href: "/logo.png",
 				},
 				{
 					rel: "preconnect",
