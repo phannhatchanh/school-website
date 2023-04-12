@@ -10,7 +10,7 @@ const schoolname = await getSetting();
 
 	<SchoolBanner />
 	<section>
-		<h2>Truy cập nhanh</h2>
+		<HeadingPageH2 title="Truy cập nhanh" />
 		<Grid>
 			<CategoryButton
 				title="Giới thiệu"
@@ -38,12 +38,7 @@ const schoolname = await getSetting();
 	</section>
 	<section>
 		<div>
-			<h2>
-				<NuxtLink to="/posts">
-					Bài viết mới nhất
-					<Icon name="mdi:chevron-right" size="30" />
-				</NuxtLink>
-			</h2>
+			<HeadingPageH2 title="Bài viết mới nhất" />
 			<div
 				class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
 			>
@@ -59,7 +54,7 @@ const schoolname = await getSetting();
 		</div>
 	</section>
 	<section>
-		<h2>Hướng dẫn của chúng tôi</h2>
+		<HeadingPageH2 title="Hướng dẫn của chúng tôi" />
 		<Grid>
 			<Major
 				tag="từ khóa 1"
@@ -76,7 +71,7 @@ const schoolname = await getSetting();
 		</Grid>
 	</section>
 	<section>
-		<h2>Bạn có thể tìm chúng tôi ở đâu?</h2>
+		<HeadingPageH2 title="Bạn có thể tìm chúng tôi ở đâu?" />
 		<iframe
 			src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=TRƯỜNG PTDTNT-THCS-HUYỆN CÀNG LONG, Ấp Lưu Tư, Huyền Hội, Càng Long, Trà Vinh&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
 			width="100%"

@@ -22,7 +22,7 @@ const isUpcoming = (startDate: string) => {
 	</Head>
 	<main>
 		<section>
-			<h1>Sự kiện</h1>
+			<HeadingPageH1 title="Sự kiện" />
 			<Grid>
 				<div v-for="(item, index) in data" :key="index">
 					<Event

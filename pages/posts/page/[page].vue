@@ -28,7 +28,7 @@ const schoolname = await getSetting();
 		<Title>Bài viết - {{ item.name }} {{ item.district }}</Title>
 	</Head>
 	<div>
-		<h1>Bài viết</h1>
+		<HeadingPageH1 title="Bài viết" />
 		<div
 			class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
 		>

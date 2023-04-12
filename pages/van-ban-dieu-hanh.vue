@@ -10,7 +10,7 @@ const schoolname = await getSetting();
 	<main>
 		<section class="relative px-2 text-gray-600 sm:px-2 lg:px-0">
 			<div class="h-screen">
-				<h1 class="mb-2 text-xl">Văn bản điều hành</h1>
+				<HeadingPageH1 title="Văn bản điều hành" />
 				<div class="hidden overflow-auto rounded-lg shadow md:block">
 					<table class="w-full">
 						<thead class="border-b-2 border-gray-200 bg-gray-50">
