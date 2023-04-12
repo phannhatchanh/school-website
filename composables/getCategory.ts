@@ -15,6 +15,8 @@ interface Article {
 interface Category {
 	_id: string;
 	title: string;
+	description: string;
+	icon: string;
 	color: {
 		hex: string;
 	};
@@ -26,6 +28,8 @@ export const getCategory = async (params: string): Promise<Category> => {
 	  _id,
 	  title,
 	  color,
+	  description,
+	  icon,
 	  "articles": *[_type == "article" && references(^._id)]{
 		_id,
 		title,

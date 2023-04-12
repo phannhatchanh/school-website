@@ -13,7 +13,8 @@ export const getArticles = async (
 				title,
 				"slug": slug.current,
 				"description": description[],
-				"color": color.hex
+				"color": color.hex,
+				icon,
 			},
 			"image": image.asset -> { url, altText },
 			body[],
@@ -36,7 +37,8 @@ export const getArticle = async (slug: string): Promise<Article> => {
 			title,
 			"slug": slug.current,
 			"description": description[],
-			"color": color.hex
+			"color": color.hex,
+			icon,
 		},
 		"image": image.asset -> { url, altText },
 		body,

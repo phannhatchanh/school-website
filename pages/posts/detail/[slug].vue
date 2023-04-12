@@ -23,18 +23,24 @@ if (!isFound) setResponseStatus(404, "Không tìm thấy bài viết");
 						{{ article.title }}
 					</h1>
 					<div class="page-subtitle">
-						<span :style="'color: ' + article.category.color">
-							<a href="">{{ article.category.title }}</a>
-						</span>
+						<NuxtLink
+							:to="`../../category/${article.category.slug}`"
+							:style="'color: ' + article.category.color"
+						>
+							<Icon :name="article.category.icon" size="15" class="mb-1" />
+							{{ article.category.title }}
+						</NuxtLink>
 						<span>
-							{{ getDateFromArticle(article) }}
+							<Icon name="mdi-light:alarm" size="20" class="mb-1" />{{
+								getDateFromArticle(article)
+							}}
 						</span>
 					</div>
 					<p class="text-center mt-2">
-						<span class=""> Miễn phí</span>
-						<span class=""> Windows </span>
-						<span class=""> Linux </span>
-						<span class=""> MacOS </span>
+						<span class="">tag 1</span>
+						<span class="">tag 2</span>
+						<span class="">tag 3</span>
+						<span class="">tag 4</span>
 					</p>
 				</div>
 			</div>
@@ -70,7 +76,6 @@ article {
 	-o-background-size: cover;
 	&:before {
 		display: block;
-		content: "";
 		position: absolute;
 		background-color: #000;
 		top: 0;

@@ -5,6 +5,7 @@ declare interface Article {
 		title: string;
 		slug: string;
 		color: string;
+		icon: string;
 	};
 	image?: {
 		url: string;
