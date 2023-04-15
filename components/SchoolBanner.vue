@@ -2,7 +2,7 @@
 const data = await getSetting();
 </script>
 <template>
-	<div class="banner" v-for="(item, index) in data" :key="index">
+	<header class="banner" v-for="(item, index) in data" :key="index">
 		<div class="content">
 			<div class="logo">
 				<NuxtImg
@@ -30,7 +30,7 @@ const data = await getSetting();
 				/>
 			</template>
 		</div>
-	</div>
+	</header>
 </template>
 
 <style lang="scss" scoped>

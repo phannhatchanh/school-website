@@ -38,7 +38,18 @@ const schoolname = await getSetting();
 	</section>
 	<section>
 		<div>
-			<HeadingPageH2 title="Bài viết mới nhất" />
+			<div class="flex flex-row items-baseline justify-between">
+				<div class="]">
+					<HeadingPageH2 title="Bài viết mới nhất" />
+				</div>
+				<span
+					class="text-xs uppercase font-semibold text-center justify-center"
+				>
+					<NuxtLink title="Xem nhiều hơn" to="/posts/page/1">
+						Xem thêm <Icon name="mdi:chevron-right" size="20" class="mb-1" />
+					</NuxtLink>
+				</span>
+			</div>
 			<div
 				class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
 			>
@@ -48,9 +59,9 @@ const schoolname = await getSetting();
 					:key="article.slug"
 				/>
 			</div>
-			<div class="show-more">
+			<!-- <div class="show-more">
 				<Button to="/posts/page/1" class="btn">Xem nhiều hơn</Button>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<section>
