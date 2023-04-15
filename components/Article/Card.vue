@@ -18,7 +18,10 @@ defineProps<Props>();
 						<NuxtImg :src="article.image?.url" :alt="article.image.altText" />
 					</div>
 				</NuxtLink>
-				<NuxtLink class="no-a-effect" :to="'#'">
+				<NuxtLink
+					class="no-a-effect"
+					:to="`../../category/${article.category.slug}`"
+				>
 					<div class="post-cat">
 						<NuxtLink :to="`../../category/${article.category.slug}`">
 							{{ article.category.title }}

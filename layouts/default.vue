@@ -15,7 +15,7 @@
 		@apply ml-[250px] pb-[10px];
 
 		.content {
-			@apply m-auto max-w-5xl pt-[0.6em] pb-[0em] px-[1em];
+			@apply m-auto max-w-5xl;
 		}
 	}
 }
