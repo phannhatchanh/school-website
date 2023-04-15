@@ -11,7 +11,7 @@ const schoolname = await getSetting();
 	</Head>
 
 	<header
-		class="px-3 header-intro cat-intro bg-cat-10"
+		class="header-intro cat-intro bg-cat-10"
 		:style="'background: ' + categoryData.color.hex"
 	>
 		<div class="container">
@@ -170,30 +170,25 @@ const schoolname = await getSetting();
 		padding: 0 1rem 1rem 1rem;
 		text-align: center;
 		h1 {
-			color: #fff;
-			font-weight: 600;
+			@apply font-semibold text-white;
 		}
 		.subtitle {
-			color: #5eeda3;
-			font-size: 1.1rem;
-			font-weight: 700;
+			@apply text-[#5eeda3] text-[1.1rem] font-bold;
 		}
 		p.description {
-			margin-top: 1rem;
-			color: #fff;
+			@apply mt-4 text-white;
 		}
 		@media (max-width: 450px) {
 			h4 {
-				font-size: 1.2rem;
+				@apply text-[1.2rem];
 			}
 		}
 
 		.title {
-			margin-bottom: 1rem;
+			@apply mb-4;
 		}
 		.description {
-			margin: 0;
-			font-size: 0.9rem;
+			@apply m-0 text-[0.9rem];
 		}
 	}
 	&:hover {
@@ -217,12 +212,12 @@ const schoolname = await getSetting();
 			}
 		}
 		.img-avatar {
-			i {
-				padding: 5px 0;
+			svg {
+				@apply mt-4 py-[5px] px-0;
 			}
 		}
 		p {
-			color: #fff;
+			@apply text-white;
 		}
 
 		.idx-social {
@@ -231,8 +226,7 @@ const schoolname = await getSetting();
 			}
 		}
 		.description {
-			color: #fff;
-			font-size: 1rem;
+			@apply text-white text-base;
 		}
 	} // intro
 }
