@@ -28,7 +28,7 @@ withDefaults(defineProps<Props>(), {
 
 <style lang="scss" scoped>
 .category-button {
-	@apply flex justify-between items-center relative text-[0.9em] border-[1px] border-[#00000020] m-2;
+	@apply flex justify-between items-center relative text-[0.9em] border-[1px] border-[#00000020] m-2 rounded;
 
 	.text {
 		@apply p-[1em] pr-[1.5em];
@@ -61,6 +61,7 @@ withDefaults(defineProps<Props>(), {
 	&:hover {
 		&::before {
 			clip-path: circle(150% at top left);
+			@apply rounded;
 		}
 	}
 }

@@ -24,8 +24,8 @@ const isUpcoming = (startDate: string) => {
 	<main>
 		<section>
 			<HeadingPageH1 title="Sự kiện" />
-			<Grid>
-				<div v-for="(item, index) in data" :key="index">
+			<div class="grid gap-4 grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-2">
+				<template v-for="(item, index) in data" :key="index">
 					<Event
 						:status="
 							isCurrent(item.startDate, item.endDate)
@@ -34,13 +34,27 @@ const isUpcoming = (startDate: string) => {
 								? 'Sắp diễn ra'
 								: 'Đã kết thúc'
 						"
+						:classStatus="
+							isCurrent(item.startDate, item.endDate)
+								? 'text-green-500'
+								: isUpcoming(item.startDate)
+								? 'text-orange-500'
+								: 'text-gray-500'
+						"
+						:icon="
+							isCurrent(item.startDate, item.endDate)
+								? '🎊'
+								: isUpcoming(item.startDate)
+								? '🎉'
+								: '✨'
+						"
 						:title="item.title"
 						:description="item.description"
 						:startDate="getDateFromEnvent(item.startDate)"
 						:endDate="getDateFromEnvent(item.endDate)"
 					/>
-				</div>
-			</Grid>
+				</template>
+			</div>
 		</section>
 	</main>
 </template>
