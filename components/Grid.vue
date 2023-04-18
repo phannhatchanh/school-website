@@ -1,24 +1,7 @@
 <template>
-	<div class="grid">
+	<div class="grid gap-4 grid-cols-1 my-2 md:grid-cols-2 lg:grid-cols-2">
 		<slot />
 	</div>
 </template>
 
-<style lang="scss" scoped>
-.grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-@media (max-width: 1200px) {
-	.grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (max-width: 677px) {
-	.grid {
-		grid-template-columns: 1fr;
-	}
-}
-</style>
+<style lang="scss" scoped></style>

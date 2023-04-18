@@ -24,7 +24,7 @@ const isUpcoming = (startDate: string) => {
 	<main>
 		<section>
 			<HeadingPageH1 title="Sự kiện" />
-			<div class="grid gap-4 grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-2">
+			<Grid>
 				<template v-for="(item, index) in data" :key="index">
 					<Event
 						:status="
@@ -54,7 +54,7 @@ const isUpcoming = (startDate: string) => {
 						:endDate="getDateFromEnvent(item.endDate)"
 					/>
 				</template>
-			</div>
+			</Grid>
 		</section>
 	</main>
 </template>
