@@ -7,6 +7,7 @@ const schoolname = await getSetting();
 	<Head v-for="(item, index) in schoolname" :key="index">
 		<Title>Văn bản điều hành - {{ item.name }} {{ item.district }}</Title>
 	</Head>
+	<SchoolBanner />
 	<main>
 		<section class="relative px-2 text-gray-600 sm:px-2 lg:px-0">
 			<div class="h-screen">

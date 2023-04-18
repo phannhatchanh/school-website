@@ -28,36 +28,21 @@ withDefaults(defineProps<Props>(), {
 
 <style lang="scss" scoped>
 .category-button {
-	font-size: 0.9em;
-	border: 1px solid rgba(0, 0, 0, 0.125);
-	text-decoration: none;
-	margin: 8px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
+	@apply flex justify-between items-center relative text-[0.9em] border-[1px] border-[#00000020] m-2;
 
 	.text {
-		padding: 1em;
-		padding-right: 1.5em;
-
+		@apply p-[1em] pr-[1.5em];
 		.title {
-			font-size: 1.3em;
-			font-weight: 500;
+			@apply font-medium text-lg;
 		}
 
 		.description {
-			padding-top: 0.7em;
-			color: #252525;
+			@apply text-[#252525] pt-[0.7em];
 		}
 	}
 
 	.arrow {
-		position: relative;
-		display: grid;
-		place-items: center;
-		padding: 20px;
+		@apply relative grid place-items-center p-5;
 	}
 
 	&::before {

@@ -20,6 +20,7 @@ const isUpcoming = (startDate: string) => {
 	<Head v-for="(item, index) in schoolname" :key="index">
 		<Title>Sự kiện - {{ item.name }} {{ item.district }}</Title>
 	</Head>
+	<SchoolBanner />
 	<main>
 		<section>
 			<HeadingPageH1 title="Sự kiện" />

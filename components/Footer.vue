@@ -9,8 +9,6 @@ const data = await getSetting();
 				<div>
 					<NuxtImg
 						src="/logo.png"
-						width="80"
-						height="95"
 						:alt="item.name + ' ' + item.district + ' ' + item.province"
 					/>
 				</div>
