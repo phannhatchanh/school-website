@@ -37,49 +37,53 @@ const schoolname = await getSetting();
 		</Grid>
 	</section>
 	<section>
-		<div>
-			<div class="flex flex-row items-baseline justify-between">
-				<div class="]">
-					<HeadingPageH2 title="Bài viết mới nhất" />
-				</div>
-				<span
-					class="text-xs uppercase font-semibold text-center justify-center"
-				>
-					<NuxtLink title="Xem nhiều hơn" to="/posts/page/1">
-						Xem thêm <Icon name="mdi:chevron-right" size="20" class="mb-1" />
-					</NuxtLink>
-				</span>
+		<div class="flex flex-row items-baseline justify-between">
+			<div class="]">
+				<HeadingPageH2 title="Bài viết mới nhất" />
 			</div>
-			<div
-				class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
-			>
-				<ArticleCard
-					v-for="article in articles"
-					:article="article"
-					:key="article.slug"
-				/>
-			</div>
-			<!-- <div class="show-more">
-				<Button to="/posts/page/1" class="btn">Xem nhiều hơn</Button>
-			</div> -->
+			<span class="text-xs uppercase font-semibold text-center justify-center">
+				<NuxtLink title="Xem nhiều hơn" to="/posts/page/1">
+					Xem thêm <Icon name="mdi:chevron-right" size="20" class="mb-1" />
+				</NuxtLink>
+			</span>
+		</div>
+		<div
+			class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
+		>
+			<ArticleCard
+				v-for="article in articles"
+				:article="article"
+				:key="article.slug"
+			/>
 		</div>
 	</section>
-	<section>
-		<HeadingPageH2 title="Hướng dẫn của chúng tôi" />
-		<Grid>
-			<Major
-				tag="từ khóa 1"
-				title="Tiêu đề bài viết số 1"
-				description="Đoạn mô tả ngắn cho bài viết số 1"
-				extenstions="Mảnh ghép thứ 1"
+	<section class="layout-book">
+		<div class="flex flex-row items-baseline justify-between">
+			<div class="]">
+				<HeadingPageH2 title="Sách hay" />
+			</div>
+			<span class="text-xs uppercase font-semibold text-center justify-center">
+				<NuxtLink title="Xem nhiều hơn" to="/posts/page/1">
+					Xem thêm <Icon name="mdi:chevron-right" size="20" class="mb-1" />
+				</NuxtLink>
+			</span>
+		</div>
+		<div
+			class="grid grid-cols-2 gap-8 xl:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
+		>
+			<Book
+				author="Edward Frenkel"
+				title="Tình yêu và Toán học"
+				category="Toán học"
+				imageUrl="https://math2it.com/wp-content/uploads/tinhyeuvatoanhoc.jpg"
 			/>
-			<Major
-				tag="từ khóa 2"
-				title="Tiêu đề bài viết số 2"
-				description="Đoạn mô tả ngắn cho bài viết số 2"
-				extenstions="Mảnh ghép thứ 2"
+			<Book
+				author="Ian Stewart"
+				title="17 phương trình làm thay đổi thế giới"
+				category="Toán học"
+				imageUrl="https://math2it.com/wp-content/uploads/17book-200x300-1.jpg"
 			/>
-		</Grid>
+		</div>
 	</section>
 	<section>
 		<HeadingPageH2 title="Bạn có thể tìm chúng tôi ở đâu?" />
