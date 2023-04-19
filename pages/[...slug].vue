@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ErrorMessage from "~~/components/ErrorMessage.vue";
+import ErrorMessage from "~/components/ErrorMessage.vue";
 
 const schoolname = await getSetting();
 const data = await getPageFromPath(useRoute().params["slug"] as string[]);
