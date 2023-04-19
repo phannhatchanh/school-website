@@ -9,8 +9,7 @@ const data = await getArticleInCategory();
 	</Head>
 
 	<SchoolBanner />
-	<h1 class="text-2xl my-4">DANH MỤC BÀI VIẾT</h1>
-
+	<HeadingPageH1 title="Danh mục bài viết" />
 	<div v-for="category in data" :key="category._id">
 		<div class="flex flex-row items-baseline justify-between">
 			<h3

@@ -31,18 +31,18 @@ withDefaults(defineProps<Props>(), {
 	@apply flex justify-between items-center relative text-[0.9em] border-[1px] border-[#00000020] rounded;
 
 	.text {
-		@apply p-[1em] pr-[1.5em];
+		@apply p-3 pr-[1.5em];
 		.title {
-			@apply font-medium text-lg;
+			@apply font-semibold text-lg text-black;
 		}
 
 		.description {
-			@apply text-[#252525] pt-[0.7em];
+			@apply text-[#252525] pt-1;
 		}
 	}
 
 	.arrow {
-		@apply relative grid place-items-center p-5;
+		@apply relative grid place-items-center p-5 text-black;
 	}
 
 	&::before {

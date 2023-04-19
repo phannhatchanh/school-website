@@ -38,7 +38,7 @@ const schoolname = await getSetting();
 	</section>
 	<section>
 		<div class="flex flex-row items-baseline justify-between">
-			<div class="]">
+			<div>
 				<HeadingPageH2 title="Bài viết mới nhất" />
 			</div>
 			<span class="text-xs uppercase font-semibold text-center justify-center">
@@ -101,16 +101,6 @@ const schoolname = await getSetting();
 
 <style lang="scss" scoped>
 section {
-	margin: 2em 0;
-}
-
-.show-more {
-	display: grid;
-	place-items: center;
-
-	.btn {
-		padding: 0.6em;
-		margin: 0.5em;
-	}
+	@apply my-8;
 }
 </style>

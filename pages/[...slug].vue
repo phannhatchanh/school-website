@@ -8,7 +8,7 @@ const isFound = data != null && data.path != null;
 if (!isFound) setResponseStatus(404);
 </script>
 <template>
-	<div>
+	<div class="page-content">
 		<Head v-for="(item, index) in schoolname" :key="index">
 			<Title v-if="isFound"
 				>{{ data.title }} - {{ item.name }} {{ item.district }}</Title

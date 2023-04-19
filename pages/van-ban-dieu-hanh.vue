@@ -12,11 +12,11 @@ const schoolname = await getSetting();
 		<section class="relative px-2 text-gray-600 sm:px-2 lg:px-0">
 			<div class="h-screen">
 				<HeadingPageH1 title="Văn bản điều hành" />
-				<div class="hidden overflow-auto rounded-lg shadow md:block">
+				<div class="hidden overflow-auto rounded-lg md:block">
 					<table class="w-full">
 						<thead class="border-b-2 border-gray-200 bg-gray-50">
 							<tr class="odd:bg-white even:bg-slate-50">
-								<th class="w-20 p-3 text-sm font-bold tracking-wide text-left">
+								<th class="w-10 p-3 text-sm font-bold tracking-wide text-left">
 									STT
 								</th>
 								<th class="w-24 p-3 text-sm font-bold tracking-wide text-left">
@@ -40,7 +40,7 @@ const schoolname = await getSetting();
 						>
 							<tr class="bg-white">
 								<td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-									<div class="font-bold text-blue-500">
+									<div class="font-bold text-blue-500 text-center">
 										{{ index + 1 }}
 									</div>
 								</td>
@@ -88,11 +88,6 @@ const schoolname = await getSetting();
 					>
 						<div class="flex items-center space-x-2 text-sm">
 							<div>
-								<a href="#" class="font-bold text-blue-500 hover:underline">
-									{{ item.issued_levels }}
-								</a>
-							</div>
-							<div>
 								<span
 									class="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50"
 								>
@@ -106,10 +101,15 @@ const schoolname = await getSetting();
 						<div class="text-sm text-gray-700">
 							{{ item.description }}
 						</div>
-						<div class="flex items-center text-sm font-medium text-black">
+						<div
+							class="flex flex-row items-baseline justify-between text-sm font-medium text-black"
+						>
 							<NuxtLink :to="item.file"
 								><Icon name="bi:cloud-download" size="18" /> Tải về</NuxtLink
 							>
+							<a href="#" class="font-bold text-blue-500 hover:underline">
+								{{ item.issued_levels }}
+							</a>
 						</div>
 					</div>
 				</div>
