@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 		"@nuxtjs/tailwindcss",
 	],
 	plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
-	css: ["~/assets/global.css"],
+	css: ["~/assets/global.scss"],
 	sanity: {
 		projectId: process.env.SANITY_PROJECT_ID,
 		dataset: process.env.ENV == "DEVELOPMENT" ? "development" : "production",
