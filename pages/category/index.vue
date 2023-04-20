@@ -9,73 +9,81 @@ const data = await getArticleInCategory();
 	</Head>
 
 	<SchoolBanner />
-	<HeadingPageH1 title="Danh mục bài viết" />
-	<div v-for="category in data" :key="category._id">
-		<div class="flex flex-row items-baseline justify-between">
-			<h3
-				:style="'background: ' + category.color.hex"
-				class="text-white px-1.5 py-0.5 rounded mb-2 uppercase w-max hover:opacity-[0.8]"
-			>
-				<NuxtLink
-					:title="category.title"
-					:to="'/category/' + category.slug.current"
+	<section class="page-content">
+		<HeadingPageH1 title="Danh mục bài viết" />
+
+		<div v-for="category in data" :key="category._id">
+			<div class="flex flex-row items-baseline justify-between">
+				<h3
+					:style="'background: ' + category.color.hex"
+					class="text-white px-1.5 py-0.5 rounded mb-2 uppercase w-max hover:opacity-[0.8] category"
 				>
-					{{ category.title }}
-				</NuxtLink>
-			</h3>
-			<span
-				class="text-xs uppercase font-semibold"
-				:style="'color: ' + category.color.hex"
-			>
-				<NuxtLink
-					:title="category.title"
-					:to="'/category/' + category.slug.current"
+					<NuxtLink
+						:title="category.title"
+						:to="'/category/' + category.slug.current"
+					>
+						{{ category.title }}
+					</NuxtLink>
+				</h3>
+				<span
+					class="text-xs uppercase font-semibold more"
+					:style="'color: ' + category.color.hex"
 				>
-					Xem thêm <Icon name="mdi:chevron-right" size="20" class="mb-1" />
-				</NuxtLink>
-			</span>
-		</div>
-		<div
-			class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
-		>
-			<div v-if="category.articles.length === 0">
-				<p>Chưa có bài viết trong mục này.</p>
+					<NuxtLink
+						:title="category.title"
+						:to="'/category/' + category.slug.current"
+					>
+						Xem thêm <Icon name="mdi:chevron-right" size="20" class="mb-1" />
+					</NuxtLink>
+				</span>
 			</div>
 			<div
-				class="style-1-4"
-				v-else
-				v-for="article in category.articles"
-				:key="article._id"
+				class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
 			>
-				<NuxtLink
-					class="no-a-effect"
-					:to="'/posts/detail/' + article.slug.current"
-					:title="article.title"
+				<div v-if="category.articles.length === 0">
+					<p>Chưa có bài viết trong mục này.</p>
+				</div>
+				<div
+					class="style-1-4"
+					v-else
+					v-for="article in category.articles"
+					:key="article._id"
 				>
-					<div class="featured-image">
-						<NuxtImg
-							class="attachment-medium size-medium wp-post-image"
-							width="400"
-							height="267"
-							:src="article.image.url"
-							:alt="article.title"
-						/>
-					</div>
-					<div class="post-title">
-						{{ article.title }}
-					</div>
-					<div class="post-meta">
-						<span class="date">
-							<Icon name="bi:clock" class="mb-1" />
-							{{ getDateArticleInCategory(article.datetime) }}
-						</span>
-					</div>
-				</NuxtLink>
+					<NuxtLink
+						class="no-a-effect"
+						:to="'/posts/detail/' + article.slug.current"
+						:title="article.title"
+					>
+						<div class="featured-image">
+							<NuxtImg
+								width="400"
+								height="267"
+								:src="article.image.url"
+								:alt="article.title"
+							/>
+						</div>
+						<div class="post-title">
+							{{ article.title }}
+						</div>
+						<div class="post-meta">
+							<span class="date">
+								<Icon name="bi:clock" class="mb-1" />
+								{{ getDateArticleInCategory(article.datetime) }}
+							</span>
+						</div>
+					</NuxtLink>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 <style lang="scss" scoped>
+.category a {
+	@apply text-white;
+}
+.more a {
+	@apply text-gray-800;
+}
 .style-1-4 {
 	border-radius: 8px;
 	color: #333;

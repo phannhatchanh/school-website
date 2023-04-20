@@ -47,6 +47,20 @@ defineProps<Props>();
 
 <style lang="scss" scoped>
 .layout-photo-title {
+	a {
+		.post-cat {
+			a {
+				@apply text-white;
+				&:hover {
+					filter: brightness(110%);
+				}
+			}
+		}
+		color: #333;
+		&:hover {
+			@apply text-[#f63d3a];
+		}
+	}
 	.item {
 		margin-bottom: 2rem;
 		@media (max-width: 991px) {
@@ -60,9 +74,6 @@ defineProps<Props>();
 				img {
 					transform: scale(1.1);
 				}
-			}
-			.post-title {
-				color: #f63d3a;
 			}
 		}
 	}
@@ -96,7 +107,6 @@ defineProps<Props>();
 		text-align: center;
 		font-size: 0.93rem;
 		font-weight: 600;
-		color: #333;
 	}
 	.post-date {
 		text-align: center;

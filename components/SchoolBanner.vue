@@ -35,48 +35,28 @@ const data = await getSetting();
 
 <style lang="scss" scoped>
 .banner {
-	margin-top: 0.5em;
-	padding: 1em 0.5em;
-	position: relative;
+	@apply relative py-[1em] px-[0.5em];
 
 	.background {
 		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: -1;
-			width: 100%;
-			height: 100%;
-
-			overflow: hidden;
-			object-fit: cover;
+			@apply absolute top-0 left-0 -z-[1] w-full h-full overflow-hidden object-cover;
 		}
 	}
 
 	.content {
-		display: flex;
-		gap: 20px;
-		padding: 0.7em;
-		background-color: #0007;
-		width: fit-content;
-
+		@apply flex rounded-md gap-5 p-2 bg-[#0007] w-fit;
 		img {
-			width: 125px;
-			height: 125px;
+			@apply w-28 h-28;
 		}
 
 		.title {
-			color: white;
-			font-size: 1.15em;
-
+			@apply text-white text-xl;
 			.name {
-				font-weight: 600;
-				font-size: 1.5em;
-				padding: 5px 0;
+				@apply font-semibold text-[1.5em] py-1.5;
 			}
 
 			.sub1 {
-				padding: 3px 0;
+				@apply py-[3px];
 			}
 		}
 	}
@@ -86,12 +66,11 @@ const data = await getSetting();
 	.banner {
 		.content {
 			.title {
-				font-size: 0.95em;
+				@apply text-[0.95em];
 			}
 
 			img {
-				width: 90px;
-				height: 90px;
+				@apply w-[90px] h-[90px];
 			}
 		}
 	}

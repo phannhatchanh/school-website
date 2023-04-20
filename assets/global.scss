@@ -32,3 +32,9 @@ a {
 	max-width: 100%;
 	height: auto;
 }
+
+.page-content,
+article,
+section {
+	@apply m-auto max-w-5xl pt-[0.6em] pb-[0em] px-[1em];
+}

@@ -30,7 +30,7 @@ const schoolname = await getSetting();
 	</header>
 
 	<div
-		class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
+		class="page-content grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
 	>
 		<div
 			class="metro-single-article"
