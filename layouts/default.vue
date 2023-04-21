@@ -3,6 +3,7 @@
 		<Nav />
 		<main class="content-wrapper">
 			<slot />
+			<BackToTop />
 			<Footer />
 		</main>
 	</div>
