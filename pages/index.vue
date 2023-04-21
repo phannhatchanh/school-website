@@ -9,6 +9,11 @@ const schoolname = await getSetting();
 	</Head>
 
 	<SchoolBanner />
+
+	<div class="m-0 p-2 bg-[#e8e8e8] text-sm font-bold">
+		<div>Thứ Hai, ngày 28 tháng 02 năm 2023</div>
+	</div>
+
 	<section>
 		<HeadingPageH2 title="Truy cập nhanh" />
 		<Grid>

@@ -22,7 +22,7 @@ defineProps<{
 <style lang="scss" scoped>
 .layout-book {
 	.item {
-		margin-top: 1rem;
+		@apply mt-4;
 
 		&:hover {
 			.book-cover {
@@ -33,51 +33,32 @@ defineProps<{
 		}
 
 		.book-cover {
-			position: relative;
-			text-align: center;
-			z-index: 2;
-
+			@apply relative text-center z-[2];
 			img {
-				margin: 0 auto;
-				position: relative;
-				height: 100%;
-				width: 100%;
+				@apply my-0 mx-auto relative h-[80%] w-[80%] border-2 border-[#eee];
 				box-shadow: 0 12px 8px -8px #828282;
-				border: 2px solid #eee;
 				transition: transform 0.2s;
 				-webkit-transition: transform 0.2s;
 			}
 		}
 
 		.book-shelf {
-			background: #ddd;
-			height: 30px;
-			margin-bottom: 0.5rem;
-			margin-top: -18px;
-			transform: skewX(-30deg);
-			z-index: 1;
+			@apply transform -skew-x-[30deg] bg-[#ddd] h-[30px] mb-[0.5rem] -mt-[18px] -z-[1];
 		}
 
 		.book-title {
-			text-align: center;
-			font-weight: bold;
-			font-size: 0.95rem;
-			line-height: 1.4;
-			margin-bottom: 5px;
-			color: #333;
+			@apply text-center font-bold text-[0.95rem] leading-[1.4] mb-[5px] text-[#333];
 		}
 		.book-author,
 		.book-category {
-			text-align: center;
-			font-size: 0.8rem;
-			color: #666;
+			@apply text-center text-[0.8rem] text-[#666];
 		}
 		&:hover {
 			.book-title {
-				color: var(--yellow);
+				@apply text-[var(--yellow)];
 			}
 			.book-author {
-				color: #000;
+				@apply text-black;
 			}
 		}
 	}
