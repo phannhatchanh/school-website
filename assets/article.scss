@@ -1,0 +1,72 @@
+article {
+    // Hyperlink
+    a {
+        @apply text-blue-500;
+        &:hover {
+            @apply text-[color:var(--yellow)];
+        }
+    }
+
+    // Heading
+    h2 {
+        @apply relative text-xl font-semibold sm:text-2xl;
+    }
+
+    h3 {
+        @apply text-xl font-semibold;
+    }
+
+    h4 {
+        @apply text-lg font-semibold;
+    }
+
+    p {
+        @apply my-2;
+    }
+
+    blockquote {
+        @apply py-2 px-4 my-4 border-l-4 rounded-xl border-gray-300 bg-gray-50 italic font-medium leading-relaxed text-gray-900;
+    }
+
+    code {
+        @apply text-pink-500 font-mono;
+    }
+
+    strong {
+        @apply font-bold text-slate-700;
+    }
+
+    hr {
+        @apply my-8 border-none;
+        @apply md:my-12;
+
+        & + * {
+            @apply mt-0;
+        }
+
+        & + h2 {
+            @apply -mt-2;
+        }
+
+        & + h3 {
+            @apply -mt-2;
+        }
+    }
+
+    ul {
+        @apply list-disc;
+    }
+    ol {
+        @apply list-decimal;
+    }
+    ul,
+    ol {
+        @apply pl-5;
+        li {
+            @apply relative leading-relaxed space-y-3 text-gray-600 marker:text-slate-600;
+            &::before {
+                @apply text-slate-500;
+            }
+        }
+    }
+}
