@@ -11,7 +11,6 @@ const AuthRegister = resolveComponent("AuthRegister");
 </script>
 
 <template>
-	<SchoolBanner />
 	<div class="container flex items-center justify-center">
 		<component :is="currentPage === 'login' ? AuthLogin : AuthRegister" />
 	</div>
