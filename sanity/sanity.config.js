@@ -9,7 +9,7 @@ import schemaTypes from "./schemas/schema";
 
 export default defineConfig({
   name: "PTDTNT-THCS-CANG-LONG",
-  projectId: "vzlac2zd",
+  projectId: process.env.SANITY_PROJECT_ID,
   dataset: "production",
   plugins: [
     deskTool({
