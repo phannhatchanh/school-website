@@ -1,0 +1,5 @@
+.nuxt
+.sanity
+.vscode
+.env
+node_modules

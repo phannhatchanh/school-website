@@ -1,0 +1,42 @@
+.page-content {
+    a {
+        @apply text-blue-500;
+        &:hover {
+            @apply text-[color:var(--yellow)];
+        }
+    }
+
+    // Heading
+    h1 {
+        @apply relative text-xl font-semibold sm:text-3xl;
+    }
+
+    h2 {
+        @apply relative text-xl font-semibold sm:text-2xl;
+    }
+
+    h3 {
+        @apply text-xl font-semibold;
+    }
+
+    h4 {
+        @apply text-lg font-semibold;
+    }
+    ul {
+        @apply list-disc;
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+    ul,
+    ol {
+        @apply pl-5;
+        li {
+            @apply relative leading-relaxed space-y-3 text-gray-600 marker:text-slate-600;
+            &::before {
+                @apply text-slate-500;
+            }
+        }
+    }
+}
