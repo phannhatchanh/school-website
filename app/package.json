@@ -8,7 +8,7 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
-		"@nuxt/image-edge": "1.0.0-28092735.a80ab4a",
+		"@nuxt/image-edge": "1.0.0-28099902.2b6ed1c",
 		"@nuxtjs/sanity": "^1.6.0",
 		"@types/bcrypt": "^5.0.0",
 		"@types/express": "^4.17.17",
