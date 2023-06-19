@@ -8,14 +8,24 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
+<<<<<<< HEAD
 		"@nuxt/image-edge": "1.0.0-28020728.5df24eb",
 		"@nuxtjs/sanity": "^1.7.1",
+=======
+		"@nuxt/image-edge": "1.0.0-rc.1-28116474.c4a8ff6",
+		"@nuxtjs/sanity": "^1.6.0",
+>>>>>>> 56a0f538ae4699bb24f22ff7f35af4e4a867c52e
 		"@types/bcrypt": "^5.0.0",
 		"@types/express": "^4.17.17",
 		"@types/jsonwebtoken": "^9.0.2",
 		"autoprefixer": "^10.4.14",
+<<<<<<< HEAD
 		"nuxt": "^3.4.3",
 		"nuxt-icon": "^0.3.3",
+=======
+		"nuxt": "^3.3.3",
+		"nuxt-icon": "^0.4.0",
+>>>>>>> 56a0f538ae4699bb24f22ff7f35af4e4a867c52e
 		"postcss": "^8.4.23",
 		"prisma": "^4.13.0",
 		"sass": "^1.62.1",
