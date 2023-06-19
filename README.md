@@ -2,7 +2,7 @@
 
 ## [Nuxt 3](https://nuxt.com/) - nền tảng của ứng dụng
 
-Nuxt 3 được xây dựng dựa trên Vue.js, cho hiệu suất ứng dụng nhanh hơn và hỗ trợ SEO tốt hơn nhờ Server-side rendering (SSR).
+Nuxt 3 được xây dựng dựa trên Vue.js, cho hiệu suất ứng dụng nhanh hơn và hỗ trợ SEO tốt hơn.
 
 ## [Sanity](https://sanity.io/) - Hệ thống quản lý nội dung
 
