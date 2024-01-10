@@ -30,8 +30,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-icons:
-    specifier: ^4.8.0
-    version: 4.8.0(react@18.2.0)
+    specifier: ^5.0.0
+    version: 5.0.0(react@18.2.0)
   sanity:
     specifier: ^3.9.1
     version: 3.9.1(react-dom@18.2.0)(react@18.2.0)(styled-components@6.0.0)
@@ -4888,6 +4888,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
+    bundledDependencies: false
 
   /crelt@1.0.5:
     resolution: {integrity: sha512-+BO9wPPi+DWTDcNYhr/W90myha8ptzftZT+LwcmUbbok0rcP/fequmFYCw8NMoH7pkAZQzU78b3kYrlua5a9eA==}
@@ -7381,8 +7382,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-icons@4.8.0(react@18.2.0):
-    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+  /react-icons@5.0.0(react@18.2.0):
+    resolution: {integrity: sha512-8gBBjYRrO14BU9RuMEVptG5aB1gwNPAAgsKOuPggx2hg332pTky/r8FidEJW95cL6IG2mYCEHaYuAxw74wLefw==}
     peerDependencies:
       react: '*'
     dependencies:
