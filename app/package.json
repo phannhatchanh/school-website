@@ -3,9 +3,9 @@
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
-		"generate": "nuxt generate",
+		"generate": "nuxt generate && prisma generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"postinstall": "nuxt prepare && prisma generate"
 	},
 	"devDependencies": {
 		"@nuxt/image-edge": "1.0.0-testing",
