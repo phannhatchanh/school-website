@@ -70,13 +70,13 @@ const schoolname = await getSetting();
 				author="Edward Frenkel"
 				title="Tình yêu và Toán học"
 				category="Toán học"
-				imageUrl="https://math2it.com/wp-content/uploads/tinhyeuvatoanhoc.jpg"
+				imageUrl="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqMl1tJHgSjT2FNFkB6WgjvyTtlhntignzHJtnKmk_3-urQpxBxj5kZX9m9dHRdJIy_-BVw48T6cLgknvxrTZcC2pDJkhSH0lrpC7ay4Xw9xaY1XXfo5zW36k6Uq_rD852zbTL0JjwNomI/s1600/img635_3_3.jpg"
 			/>
 			<Book
 				author="Ian Stewart"
 				title="17 phương trình làm thay đổi thế giới"
 				category="Toán học"
-				imageUrl="https://math2it.com/wp-content/uploads/17book-200x300-1.jpg"
+				imageUrl="https://www.nxbtre.com.vn/Images/Book/nxbtre_full_15322020_103226.jpg"
 			/>
 		</div>
 	</section>
