@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@sanity/color-input':
         specifier: ^3.0.2
-        version: 3.0.2(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 3.1.1(@sanity/ui@1.9.3(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       '@sanity/eslint-config-studio':
         specifier: ^3.0.0
         version: 3.0.1(eslint@8.39.0)(typescript@5.4.3)
@@ -40,7 +40,7 @@ importers:
         version: 3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       sanity-plugin-media:
         specifier: ^2.0.5
-        version: 2.0.5(@sanity/color@2.2.5)(@sanity/icons@2.11.4(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 2.0.5(@sanity/color@2.2.5)(@sanity/icons@2.11.8(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       styled-components:
         specifier: ^6.0.0
         version: 6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1337,13 +1337,14 @@ packages:
     resolution: {integrity: sha512-M/ebzTGwYq+NDGMfBWxKtwtmCRJbBvXxAIQXu/J0vxnr8mXKw8gBQ7GaG0tI4WJ54w5sI6pnrD6mPiKdRHVNYw==}
     engines: {node: '>=14.18'}
 
-  '@sanity/color-input@3.0.2':
-    resolution: {integrity: sha512-jeNLxuVmt2P7LhBKCPwXL/SSjA5uryIje3AdqhJT0nO/9l7Ghmd7h11GaXwMcm5GntUbm/AtLVyQtV3/v686WQ==}
+  '@sanity/color-input@3.1.1':
+    resolution: {integrity: sha512-P1qJ+6DLCQ2NUXLCACKviJLKmdnzsVQy+EYd80vGOAyceqRc8VhVYZ9CmEYXC1JUTTHMSDWizA8zzDyCr8KScA==}
     engines: {node: '>=14'}
     peerDependencies:
+      '@sanity/ui': ^1.0 || ^2.0
       react: ^18
-      sanity: ^3
-      styled-components: ^5.2
+      sanity: ^3.23.0
+      styled-components: ^5.0 || ^6.0
 
   '@sanity/color@2.2.5':
     resolution: {integrity: sha512-tTi22KoKuER3sldXYl4c1Dq2zU7tMLDkljFiaUKVkBbu4PBvRGCFw75kXZnD2b4Bsp6vin+7sI+AKdCKRhfRuw==}
@@ -1372,6 +1373,12 @@ packages:
 
   '@sanity/icons@2.11.4':
     resolution: {integrity: sha512-xksqxTkuPnS074sIRXb3cg66ndEBKxvyhiI6NOGLQWHZLAvF/A0nCW73zGMkRN4LsuFyf76kOih8M6IYgpcwGQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: ^18
+
+  '@sanity/icons@2.11.8':
+    resolution: {integrity: sha512-C4ViXtk6eyiNTQ5OmxpfmcK6Jw+LLTi9zg9XBUD15DzC4xTHaGW9SVfUa43YtPGs3WC3M0t0K59r0GDjh52HIg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^18
@@ -6168,9 +6175,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sanity/color-input@3.0.2(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@sanity/color-input@3.1.1(@sanity/ui@1.9.3(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
     dependencies:
-      '@sanity/icons': 2.11.4(react@18.2.0)
+      '@sanity/icons': 2.11.8(react@18.2.0)
       '@sanity/incompatible-plugin': 1.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@sanity/ui': 1.9.3(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       lodash: 4.17.21
@@ -6180,7 +6187,6 @@ snapshots:
       styled-components: 6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     transitivePeerDependencies:
       - react-dom
-      - react-is
 
   '@sanity/color@2.2.5': {}
 
@@ -6233,6 +6239,10 @@ snapshots:
       react: 18.2.0
 
   '@sanity/icons@2.11.4(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@sanity/icons@2.11.8(react@18.2.0)':
     dependencies:
       react: 18.2.0
 
@@ -8910,12 +8920,12 @@ snapshots:
     dependencies:
       diff-match-patch: 1.0.5
 
-  sanity-plugin-media@2.0.5(@sanity/color@2.2.5)(@sanity/icons@2.11.4(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)):
+  sanity-plugin-media@2.0.5(@sanity/color@2.2.5)(@sanity/icons@2.11.8(react@18.2.0))(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)):
     dependencies:
       '@hookform/resolvers': 2.0.0-beta.3(react-hook-form@6.15.8(react@18.2.0))
       '@reduxjs/toolkit': 1.9.7(react-redux@7.2.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@sanity/color': 2.2.5
-      '@sanity/icons': 2.11.4(react@18.2.0)
+      '@sanity/icons': 2.11.8(react@18.2.0)
       '@sanity/incompatible-plugin': 1.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@sanity/ui': 1.9.3(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       '@tanem/react-nprogress': 5.0.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
