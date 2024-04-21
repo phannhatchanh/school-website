@@ -16,7 +16,7 @@ importers:
         version: 3.0.1(eslint@8.39.0)(typescript@5.4.3)
       '@sanity/table':
         specifier: ^1.0.1
-        version: 1.0.1(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 1.1.2(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       '@sanity/vision':
         specifier: ^3.9.1
         version: 3.9.1(@babel/runtime@7.24.4)(@codemirror/lint@6.5.0)(@codemirror/state@6.4.1)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(codemirror@6.0.1(@lezer/common@1.2.1))(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
@@ -799,8 +799,8 @@ packages:
   '@codemirror/commands@6.3.3':
     resolution: {integrity: sha512-dO4hcF0fGT9tu1Pj1D2PvGvxjeGkbC6RGcZw6Qs74TH+Ed1gw98jmUgd2axWvIZEqTeTuFrg1lEB1KV6cK9h1A==}
 
-  '@codemirror/commands@6.4.0':
-    resolution: {integrity: sha512-HB3utD5GxCvEhSyj5EuG9KpuQQhFpxalh3lwrspyL/GeSNDe4c6JDxVzL12SJ+7gUknHjZzmq7OPCb9QPgiRmQ==}
+  '@codemirror/commands@6.5.0':
+    resolution: {integrity: sha512-rK+sj4fCAN/QfcY9BEzYMgp4wwL/q5aj/VfNSoH1RWPF9XS/dUwBkvlL3hpWgEjOqlpdN1uLC9UkjJ4tmyjJYg==}
 
   '@codemirror/lang-javascript@6.2.2':
     resolution: {integrity: sha512-VGQfY+FCc285AhWuwjYxQyUQcYurWlxdKYT4bqwr3Twnd5wP5WSeu52t4tvvuWmljT4EmgEgZCqSieokhtY8hg==}
@@ -1425,8 +1425,8 @@ packages:
       react-dom: '>=16.8.0'
       slate: '>=0.65.3'
 
-  '@sanity/table@1.0.1':
-    resolution: {integrity: sha512-QeqTW6MAOS9FElIqV766yArhYVxeiWVYy8LvPlRbLzIfRVBhOm8sDTFQdULK6DuBMIMdV9vVZNRsHS5hHXfr9Q==}
+  '@sanity/table@1.1.2':
+    resolution: {integrity: sha512-VTQQYtuYXRYnrwPeQDDYQ0/MExroV4FDeJStpxW3JcYWj+dKvfMfXG5PebzqgbolhAIzgYwcmkOBMXwmwEAN7w==}
     engines: {node: '>=14'}
     peerDependencies:
       react: ^18
@@ -5690,7 +5690,7 @@ snapshots:
       '@codemirror/view': 6.26.1
       '@lezer/common': 1.2.1
 
-  '@codemirror/commands@6.4.0':
+  '@codemirror/commands@6.5.0':
     dependencies:
       '@codemirror/language': 6.10.1
       '@codemirror/state': 6.4.1
@@ -6337,9 +6337,9 @@ snapshots:
       slate: 0.81.1
       tiny-invariant: 1.0.6
 
-  '@sanity/table@1.0.1(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@sanity/table@1.1.2(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(sanity@3.9.1(@types/node@20.12.0)(@types/react@18.2.73)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
     dependencies:
-      '@sanity/icons': 2.11.4(react@18.2.0)
+      '@sanity/icons': 2.11.8(react@18.2.0)
       '@sanity/incompatible-plugin': 1.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@sanity/ui': 1.9.3(react-dom@18.2.0(react@18.2.0))(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       react: 18.2.0
@@ -6360,7 +6360,7 @@ snapshots:
     dependencies:
       '@floating-ui/react-dom': 2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@sanity/color': 2.2.5
-      '@sanity/icons': 2.11.4(react@18.2.0)
+      '@sanity/icons': 2.11.8(react@18.2.0)
       csstype: 3.1.3
       framer-motion: 10.18.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
@@ -7007,7 +7007,7 @@ snapshots:
   codemirror@6.0.1(@lezer/common@1.2.1):
     dependencies:
       '@codemirror/autocomplete': 6.16.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
-      '@codemirror/commands': 6.4.0
+      '@codemirror/commands': 6.5.0
       '@codemirror/language': 6.10.1
       '@codemirror/lint': 6.5.0
       '@codemirror/search': 6.5.6
