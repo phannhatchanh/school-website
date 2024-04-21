@@ -19,7 +19,7 @@ importers:
         version: 5.0.0(prisma@5.0.0)
       '@vee-validate/rules':
         specifier: ^4.8.6
-        version: 4.8.6(vue@3.3.4)
+        version: 4.12.6(vue@3.3.4)
       '@vercel/analytics':
         specifier: ^1.0.1
         version: 1.0.1
@@ -841,8 +841,8 @@ packages:
     peerDependencies:
       vue: '>=2.7 || >=3'
 
-  '@vee-validate/rules@4.8.6':
-    resolution: {integrity: sha512-AswolP0nx5qWq1pArsGemFF6sCjH6D4x/GBxKlGl7qwNqtAtwRgsekk9OVRdF9vrWQ+l9fH2lC3hqj+J7FmUmA==}
+  '@vee-validate/rules@4.12.6':
+    resolution: {integrity: sha512-vXhunbllildEbCWaBI2m6mij7U4pDTeoqX9CQ7/0gVMhtkTZh+QhKsDSaGI2evatECINH2cpLOBaMkubdN82VQ==}
 
   '@vercel/analytics@1.0.1':
     resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
@@ -886,6 +886,9 @@ packages:
 
   '@vue/devtools-api@6.5.0':
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
+
+  '@vue/devtools-api@6.6.1':
+    resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
 
   '@vue/reactivity-transform@3.3.4':
     resolution: {integrity: sha512-MXgwjako4nu5WFLAjpBnCj/ieqcjE2aJBINUNQzkZQfzIZA4xn+0fV1tIYBJvvva3N3OvKGofRLvQIwEQPpaXw==}
@@ -3156,6 +3159,10 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
+  type-fest@4.15.0:
+    resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
+    engines: {node: '>=16'}
+
   type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -3304,6 +3311,11 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  vee-validate@4.12.6:
+    resolution: {integrity: sha512-EKM3YHy8t1miPh30d5X6xOrfG/Ctq0nbN4eMpCK7ezvI6T98/S66vswP+ihL4QqAK/k5KqreWOxof09+JG7N/A==}
+    peerDependencies:
+      vue: ^3.3.11
 
   vee-validate@4.8.6:
     resolution: {integrity: sha512-d8SS1mfFn3qv/QRwy9BQ/0ZmoxQT37zG7zERUSK5NvmI7gx7IbQxOIXtyYVEPaDJNI4QWopBe48q91pAQqwetA==}
@@ -4506,9 +4518,9 @@ snapshots:
       unhead: 1.1.27
       vue: 3.3.4
 
-  '@vee-validate/rules@4.8.6(vue@3.3.4)':
+  '@vee-validate/rules@4.12.6(vue@3.3.4)':
     dependencies:
-      vee-validate: 4.8.6(vue@3.3.4)
+      vee-validate: 4.12.6(vue@3.3.4)
     transitivePeerDependencies:
       - vue
 
@@ -4594,6 +4606,8 @@ snapshots:
       '@vue/shared': 3.3.4
 
   '@vue/devtools-api@6.5.0': {}
+
+  '@vue/devtools-api@6.6.1': {}
 
   '@vue/reactivity-transform@3.3.4':
     dependencies:
@@ -7188,6 +7202,8 @@ snapshots:
 
   type-fest@2.19.0: {}
 
+  type-fest@4.15.0: {}
+
   type-is@1.6.18:
     dependencies:
       media-typer: 0.3.0
@@ -7406,6 +7422,12 @@ snapshots:
   utils-merge@1.0.1: {}
 
   vary@1.1.2: {}
+
+  vee-validate@4.12.6(vue@3.3.4):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      type-fest: 4.15.0
+      vue: 3.3.4
 
   vee-validate@4.8.6(vue@3.3.4):
     dependencies:
