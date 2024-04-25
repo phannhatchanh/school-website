@@ -46,7 +46,7 @@ importers:
         version: 1.0.3
       vee-validate:
         specifier: ^4.8.6
-        version: 4.8.6(vue@3.3.4)
+        version: 4.12.6(vue@3.3.4)
     devDependencies:
       '@nuxt/image-edge':
         specifier: 1.0.0-testing
@@ -897,9 +897,6 @@ packages:
 
   '@vue/compiler-ssr@3.3.4':
     resolution: {integrity: sha512-m0v6oKpup2nMSehwA6Uuu+j+wEwcy7QmwMkVNVfrV9P2qE5KshC6RwOCq8fjGS/Eak/uNb8AaWekfiXxbBB6gQ==}
-
-  '@vue/devtools-api@6.5.0':
-    resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
 
   '@vue/devtools-api@6.6.1':
     resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
@@ -3367,11 +3364,6 @@ packages:
     peerDependencies:
       vue: ^3.3.11
 
-  vee-validate@4.8.6:
-    resolution: {integrity: sha512-d8SS1mfFn3qv/QRwy9BQ/0ZmoxQT37zG7zERUSK5NvmI7gx7IbQxOIXtyYVEPaDJNI4QWopBe48q91pAQqwetA==}
-    peerDependencies:
-      vue: ^3.2.0
-
   vite-node@0.29.8:
     resolution: {integrity: sha512-b6OtCXfk65L6SElVM20q5G546yu10/kNrhg08afEoWlFRJXFq9/6glsvSVY+aI6YeC1tu2TtAqI2jHEQmOmsFw==}
     engines: {node: '>=v14.16.0'}
@@ -4678,8 +4670,6 @@ snapshots:
     dependencies:
       '@vue/compiler-dom': 3.3.4
       '@vue/shared': 3.3.4
-
-  '@vue/devtools-api@6.5.0': {}
 
   '@vue/devtools-api@6.6.1': {}
 
@@ -7529,11 +7519,6 @@ snapshots:
       type-fest: 4.15.0
       vue: 3.3.4
 
-  vee-validate@4.8.6(vue@3.3.4):
-    dependencies:
-      '@vue/devtools-api': 6.5.0
-      vue: 3.3.4
-
   vite-node@0.29.8(@types/node@20.12.7)(sass@1.75.0)(terser@5.18.0):
     dependencies:
       cac: 6.7.14
@@ -7614,7 +7599,7 @@ snapshots:
 
   vue-router@4.2.2(vue@3.3.4):
     dependencies:
-      '@vue/devtools-api': 6.5.0
+      '@vue/devtools-api': 6.6.1
       vue: 3.3.4
 
   vue@3.3.4:
