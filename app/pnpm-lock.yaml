@@ -19,7 +19,7 @@ importers:
         version: 5.12.1(prisma@5.12.1)
       '@vee-validate/rules':
         specifier: ^4.8.6
-        version: 4.12.6(vue@3.4.25)
+        version: 4.12.7(vue@3.4.25)
       '@vercel/analytics':
         specifier: ^1.0.1
         version: 1.2.2
@@ -1250,8 +1250,8 @@ packages:
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
 
-  '@vee-validate/rules@4.12.6':
-    resolution: {integrity: sha512-vXhunbllildEbCWaBI2m6mij7U4pDTeoqX9CQ7/0gVMhtkTZh+QhKsDSaGI2evatECINH2cpLOBaMkubdN82VQ==}
+  '@vee-validate/rules@4.12.7':
+    resolution: {integrity: sha512-uXq98fh/an/zIvVpdzAERh0Y/SanIt9tF5WTO+620Xc3dEt9RcsLMWtOFNq+vBc4+5MoPzWbuZcQTHHAvonvMA==}
 
   '@vercel/analytics@1.2.2':
     resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
@@ -3018,6 +3018,9 @@ packages:
   mlly@1.6.1:
     resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
 
+  mlly@1.7.0:
+    resolution: {integrity: sha512-U9SDaXGEREBYQgfejV97coK0UL1r+qnF2SyO9A3qcI8MzKnsIFKHNVEkrDyNncQTKQQumsasmeq84eNMdBfsNQ==}
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -4110,6 +4113,10 @@ packages:
     resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
     engines: {node: '>=16'}
 
+  type-fest@4.18.1:
+    resolution: {integrity: sha512-qXhgeNsX15bM63h5aapNFcQid9jRF/l3ojDoDFmekDQEUufZ9U4ErVt6SjDxnHp48Ltrw616R8yNc3giJ3KvVQ==}
+    engines: {node: '>=16'}
+
   type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -4306,6 +4313,11 @@ packages:
     resolution: {integrity: sha512-EKM3YHy8t1miPh30d5X6xOrfG/Ctq0nbN4eMpCK7ezvI6T98/S66vswP+ihL4QqAK/k5KqreWOxof09+JG7N/A==}
     peerDependencies:
       vue: ^3.3.11
+
+  vee-validate@4.12.7:
+    resolution: {integrity: sha512-1BGql4XNu/3TqHFjBLV6OrZ4fRteHXxRc9tLF5Q40IgIo1cwYEyaccC1AL3tdFUr2E3JsYhXbiEExoUSy4C9nA==}
+    peerDependencies:
+      vue: ^3.4.26
 
   vite-hot-client@0.2.3:
     resolution: {integrity: sha512-rOGAV7rUlUHX89fP2p2v0A2WWvV3QMX2UYq0fRqsWSvFvev4atHWqjwGoKaZT1VTKyLGk533ecu3eyd0o59CAg==}
@@ -5134,7 +5146,7 @@ snapshots:
       debug: 4.3.4
       kolorist: 1.8.0
       local-pkg: 0.5.0
-      mlly: 1.6.1
+      mlly: 1.7.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6163,9 +6175,9 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@vee-validate/rules@4.12.6(vue@3.4.25)':
+  '@vee-validate/rules@4.12.7(vue@3.4.25)':
     dependencies:
-      vee-validate: 4.12.6(vue@3.4.25)
+      vee-validate: 4.12.7(vue@3.4.25)
     transitivePeerDependencies:
       - vue
 
@@ -8154,6 +8166,13 @@ snapshots:
       pkg-types: 1.1.0
       ufo: 1.5.3
 
+  mlly@1.7.0:
+    dependencies:
+      acorn: 8.11.3
+      pathe: 1.1.2
+      pkg-types: 1.1.0
+      ufo: 1.5.3
+
   mri@1.2.0: {}
 
   mrmime@2.0.0: {}
@@ -9531,6 +9550,8 @@ snapshots:
 
   type-fest@4.15.0: {}
 
+  type-fest@4.18.1: {}
+
   type-is@1.6.18:
     dependencies:
       media-typer: 0.3.0
@@ -9786,6 +9807,12 @@ snapshots:
     dependencies:
       '@vue/devtools-api': 6.6.1
       type-fest: 4.15.0
+      vue: 3.4.25
+
+  vee-validate@4.12.7(vue@3.4.25):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      type-fest: 4.18.1
       vue: 3.4.25
 
   vite-hot-client@0.2.3(vite@5.2.10(@types/node@20.12.7)(sass@1.76.0)(terser@5.30.4)):
