@@ -46,7 +46,7 @@ importers:
         version: 1.0.3
       vee-validate:
         specifier: ^4.8.6
-        version: 4.12.6(vue@3.4.25)
+        version: 4.12.7(vue@3.4.25)
     devDependencies:
       '@nuxt/image-edge':
         specifier: 1.0.0-testing
