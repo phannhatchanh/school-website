@@ -19,7 +19,7 @@ importers:
         version: 5.12.1(prisma@5.12.1)
       '@vee-validate/rules':
         specifier: ^4.8.6
-        version: 4.12.7(vue@3.4.25)
+        version: 4.12.8(vue@3.4.25)
       '@vercel/analytics':
         specifier: ^1.0.1
         version: 1.2.2
@@ -104,6 +104,9 @@ packages:
 
   '@antfu/utils@0.7.7':
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
+
+  '@antfu/utils@0.7.8':
+    resolution: {integrity: sha512-rWQkqXRESdjXtc+7NRfK9lASQjpXJu1ayp7qi1d23zZorY+wBHVLHHoVcMsEnkqEBWTFqbztO7/QdJFzyEcLTg==}
 
   '@babel/code-frame@7.22.10':
     resolution: {integrity: sha512-/KKIMG4UEL35WmI9OlvMhurwtytjvXoFcGNrOvyG9zIzA8YmPjVtIZUf7b05+TPO7G7/GEmLHDaoCgACHl9hhA==}
@@ -1250,8 +1253,8 @@ packages:
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
 
-  '@vee-validate/rules@4.12.7':
-    resolution: {integrity: sha512-uXq98fh/an/zIvVpdzAERh0Y/SanIt9tF5WTO+620Xc3dEt9RcsLMWtOFNq+vBc4+5MoPzWbuZcQTHHAvonvMA==}
+  '@vee-validate/rules@4.12.8':
+    resolution: {integrity: sha512-RisPzo+jGt0B0QTVhyZK5Pxb0Q6TESnS2rbR+CE3HRtJ+z0q5rkqkSIwvKrTKJFZpowJIoAHYS02jm5Pty5C3Q==}
 
   '@vercel/analytics@1.2.2':
     resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
@@ -4109,12 +4112,12 @@ packages:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
 
-  type-fest@4.15.0:
-    resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
-    engines: {node: '>=16'}
-
   type-fest@4.18.1:
     resolution: {integrity: sha512-qXhgeNsX15bM63h5aapNFcQid9jRF/l3ojDoDFmekDQEUufZ9U4ErVt6SjDxnHp48Ltrw616R8yNc3giJ3KvVQ==}
+    engines: {node: '>=16'}
+
+  type-fest@4.18.2:
+    resolution: {integrity: sha512-+suCYpfJLAe4OXS6+PPXjW3urOS4IoP9waSiLuXfLgqZODKw/aWwASvzqE886wA0kQgGy0mIWyhd87VpqIy6Xg==}
     engines: {node: '>=16'}
 
   type-is@1.6.18:
@@ -4309,13 +4312,13 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vee-validate@4.12.6:
-    resolution: {integrity: sha512-EKM3YHy8t1miPh30d5X6xOrfG/Ctq0nbN4eMpCK7ezvI6T98/S66vswP+ihL4QqAK/k5KqreWOxof09+JG7N/A==}
-    peerDependencies:
-      vue: ^3.3.11
-
   vee-validate@4.12.7:
     resolution: {integrity: sha512-1BGql4XNu/3TqHFjBLV6OrZ4fRteHXxRc9tLF5Q40IgIo1cwYEyaccC1AL3tdFUr2E3JsYhXbiEExoUSy4C9nA==}
+    peerDependencies:
+      vue: ^3.4.26
+
+  vee-validate@4.12.8:
+    resolution: {integrity: sha512-A07rm3+y7SRk0CMD/O4nBT0nxtwjyfzGZwjEUDk18SxK0ZMzd4AFCzzdHlIiCE1QgHetxd0I3kVkZdN0GG0Oww==}
     peerDependencies:
       vue: ^3.4.26
 
@@ -4588,6 +4591,8 @@ snapshots:
       find-up: 5.0.0
 
   '@antfu/utils@0.7.7': {}
+
+  '@antfu/utils@0.7.8': {}
 
   '@babel/code-frame@7.22.10':
     dependencies:
@@ -5141,7 +5146,7 @@ snapshots:
   '@iconify/utils@2.1.23':
     dependencies:
       '@antfu/install-pkg': 0.1.1
-      '@antfu/utils': 0.7.7
+      '@antfu/utils': 0.7.8
       '@iconify/types': 2.0.0
       debug: 4.3.4
       kolorist: 1.8.0
@@ -6175,9 +6180,9 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@vee-validate/rules@4.12.7(vue@3.4.25)':
+  '@vee-validate/rules@4.12.8(vue@3.4.25)':
     dependencies:
-      vee-validate: 4.12.7(vue@3.4.25)
+      vee-validate: 4.12.8(vue@3.4.25)
     transitivePeerDependencies:
       - vue
 
@@ -9548,9 +9553,9 @@ snapshots:
 
   type-fest@3.13.1: {}
 
-  type-fest@4.15.0: {}
-
   type-fest@4.18.1: {}
+
+  type-fest@4.18.2: {}
 
   type-is@1.6.18:
     dependencies:
@@ -9567,7 +9572,7 @@ snapshots:
 
   unconfig@0.3.13:
     dependencies:
-      '@antfu/utils': 0.7.7
+      '@antfu/utils': 0.7.8
       defu: 6.1.4
       jiti: 1.21.0
 
@@ -9803,16 +9808,16 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vee-validate@4.12.6(vue@3.4.25):
-    dependencies:
-      '@vue/devtools-api': 6.6.1
-      type-fest: 4.15.0
-      vue: 3.4.25
-
   vee-validate@4.12.7(vue@3.4.25):
     dependencies:
       '@vue/devtools-api': 6.6.1
       type-fest: 4.18.1
+      vue: 3.4.25
+
+  vee-validate@4.12.8(vue@3.4.25):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      type-fest: 4.18.2
       vue: 3.4.25
 
   vite-hot-client@0.2.3(vite@5.2.10(@types/node@20.12.7)(sass@1.77.0)(terser@5.30.4)):
