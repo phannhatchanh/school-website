@@ -19,7 +19,7 @@ importers:
         version: 5.12.1(prisma@5.12.1)
       '@vee-validate/rules':
         specifier: ^4.8.6
-        version: 4.12.7(vue@3.4.25)
+        version: 4.12.8(vue@3.4.25)
       '@vercel/analytics':
         specifier: ^1.0.1
         version: 1.2.2
@@ -1253,8 +1253,8 @@ packages:
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
 
-  '@vee-validate/rules@4.12.7':
-    resolution: {integrity: sha512-uXq98fh/an/zIvVpdzAERh0Y/SanIt9tF5WTO+620Xc3dEt9RcsLMWtOFNq+vBc4+5MoPzWbuZcQTHHAvonvMA==}
+  '@vee-validate/rules@4.12.8':
+    resolution: {integrity: sha512-RisPzo+jGt0B0QTVhyZK5Pxb0Q6TESnS2rbR+CE3HRtJ+z0q5rkqkSIwvKrTKJFZpowJIoAHYS02jm5Pty5C3Q==}
 
   '@vercel/analytics@1.2.2':
     resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
@@ -6180,9 +6180,9 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@vee-validate/rules@4.12.7(vue@3.4.25)':
+  '@vee-validate/rules@4.12.8(vue@3.4.25)':
     dependencies:
-      vee-validate: 4.12.7(vue@3.4.25)
+      vee-validate: 4.12.8(vue@3.4.25)
     transitivePeerDependencies:
       - vue
 
