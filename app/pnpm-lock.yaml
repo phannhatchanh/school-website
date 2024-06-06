@@ -46,7 +46,7 @@ importers:
         version: 1.0.3
       vee-validate:
         specifier: ^4.8.6
-        version: 4.12.8(vue@3.4.25)
+        version: 4.13.0(vue@3.4.25)
     devDependencies:
       '@nuxt/image-edge':
         specifier: 1.0.0-testing
@@ -1394,8 +1394,8 @@ packages:
   '@vue/compiler-ssr@3.4.25':
     resolution: {integrity: sha512-H2ohvM/Pf6LelGxDBnfbbXFPyM4NE3hrw0e/EpwuSiYu8c819wx+SVGdJ65p/sFrYDd6OnSDxN1MB2mN07hRSQ==}
 
-  '@vue/devtools-api@6.6.1':
-    resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
+  '@vue/devtools-api@6.6.3':
+    resolution: {integrity: sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==}
 
   '@vue/devtools-applet@7.1.2':
     resolution: {integrity: sha512-frlPO1RdTR82mveeVyN/UlMWjO00cffPoEVP17UhxQoO8m1Th21CBlVaAJKiOmIkv8U4fyxhEVLQzonh3E1ESA==}
@@ -4213,8 +4213,8 @@ packages:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
 
-  type-fest@4.18.2:
-    resolution: {integrity: sha512-+suCYpfJLAe4OXS6+PPXjW3urOS4IoP9waSiLuXfLgqZODKw/aWwASvzqE886wA0kQgGy0mIWyhd87VpqIy6Xg==}
+  type-fest@4.19.0:
+    resolution: {integrity: sha512-CN2l+hWACRiejlnr68vY0/7734Kzu+9+TOslUXbSCQ1ruY9XIHDBSceVXCcHm/oXrdzhtLMMdJEKfemf1yXiZQ==}
     engines: {node: '>=16'}
 
   type-is@1.6.18:
@@ -4411,6 +4411,11 @@ packages:
 
   vee-validate@4.12.8:
     resolution: {integrity: sha512-A07rm3+y7SRk0CMD/O4nBT0nxtwjyfzGZwjEUDk18SxK0ZMzd4AFCzzdHlIiCE1QgHetxd0I3kVkZdN0GG0Oww==}
+    peerDependencies:
+      vue: ^3.4.26
+
+  vee-validate@4.13.0:
+    resolution: {integrity: sha512-8v4C36sdEZfQm77E3A+Fg5M/sV7knqXoVNUjoI/aUHoDlFcATIUFvWLT7lqsOvvhAw6i4qzw+Q/Xs9zm9ndjsQ==}
     peerDependencies:
       vue: ^3.4.26
 
@@ -6469,7 +6474,7 @@ snapshots:
       '@vue/compiler-dom': 3.4.25
       '@vue/shared': 3.4.25
 
-  '@vue/devtools-api@6.6.1': {}
+  '@vue/devtools-api@6.6.3': {}
 
   '@vue/devtools-applet@7.1.2(@unocss/reset@0.59.4)(axios@1.7.1)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.16.4))(vue@3.4.25))(jwt-decode@4.0.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(sass@1.77.4)(terser@5.30.4)))(vite@5.2.10(@types/node@20.12.7)(sass@1.77.4)(terser@5.30.4))(vue@3.4.25)':
     dependencies:
@@ -9743,7 +9748,7 @@ snapshots:
 
   type-fest@3.13.1: {}
 
-  type-fest@4.18.2: {}
+  type-fest@4.19.0: {}
 
   type-is@1.6.18:
     dependencies:
@@ -9998,8 +10003,14 @@ snapshots:
 
   vee-validate@4.12.8(vue@3.4.25):
     dependencies:
-      '@vue/devtools-api': 6.6.1
-      type-fest: 4.18.2
+      '@vue/devtools-api': 6.6.3
+      type-fest: 4.19.0
+      vue: 3.4.25
+
+  vee-validate@4.13.0(vue@3.4.25):
+    dependencies:
+      '@vue/devtools-api': 6.6.3
+      type-fest: 4.19.0
       vue: 3.4.25
 
   vite-hot-client@0.2.3(vite@5.2.10(@types/node@20.12.7)(sass@1.77.4)(terser@5.30.4)):
@@ -10129,7 +10140,7 @@ snapshots:
 
   vue-router@4.3.2(vue@3.4.25):
     dependencies:
-      '@vue/devtools-api': 6.6.1
+      '@vue/devtools-api': 6.6.3
       vue: 3.4.25
 
   vue-virtual-scroller@2.0.0-beta.8(vue@3.4.25):
