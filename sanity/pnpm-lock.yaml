@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@sanity/color-input':
         specifier: ^3.0.2
-        version: 3.1.1(@sanity/ui@2.1.7(react-dom@18.3.0(react@18.3.0))(react-is@18.3.1)(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(sanity@3.41.2(@types/node@20.12.12)(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0))
+        version: 3.1.2(@sanity/ui@2.1.7(react-dom@18.3.0(react@18.3.0))(react-is@18.3.1)(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(sanity@3.41.2(@types/node@20.12.12)(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0))
       '@sanity/eslint-config-studio':
         specifier: ^4.0.0
         version: 4.0.0(eslint@9.10.0)(typescript@5.4.5)
@@ -1464,8 +1464,8 @@ packages:
     resolution: {integrity: sha512-X9WNdiofJMDKKrzUKPBhtvEERicGUptxkcI3f2TOBld0htfuBe7cthSZ1OgrIyMO98luXC46zKvshm7bd1eDPQ==}
     engines: {node: '>=18'}
 
-  '@sanity/color-input@3.1.1':
-    resolution: {integrity: sha512-P1qJ+6DLCQ2NUXLCACKviJLKmdnzsVQy+EYd80vGOAyceqRc8VhVYZ9CmEYXC1JUTTHMSDWizA8zzDyCr8KScA==}
+  '@sanity/color-input@3.1.2':
+    resolution: {integrity: sha512-butnBGu5GvzFJ20hG+7N2qngTRuZ6m2FY5J9ABs+chj727ZUR7ABeAGVe/dIXzv6wz7xudB8+BNA1Wi2PdjPTA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@sanity/ui': ^1.0 || ^2.0
@@ -7018,7 +7018,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sanity/color-input@3.1.1(@sanity/ui@2.1.7(react-dom@18.3.0(react@18.3.0))(react-is@18.3.1)(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(sanity@3.41.2(@types/node@20.12.12)(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0))':
+  '@sanity/color-input@3.1.2(@sanity/ui@2.1.7(react-dom@18.3.0(react@18.3.0))(react-is@18.3.1)(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(sanity@3.41.2(@types/node@20.12.12)(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0)))(styled-components@6.1.10(react-dom@18.3.0(react@18.3.0))(react@18.3.0))':
     dependencies:
       '@sanity/icons': 2.11.8(react@18.3.0)
       '@sanity/incompatible-plugin': 1.0.4(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
