@@ -10,7 +10,7 @@
     "dev": "sanity dev"
   },
   "dependencies": {
-    "@sanity/color-input": "^3.0.2",
+    "@sanity/color-input": "^4.0.0",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@sanity/table": "^1.0.1",
     "@sanity/vision": "^3.9.1",
